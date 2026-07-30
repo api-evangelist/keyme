@@ -1,7 +1,29 @@
 aid: keyme
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/keyme.png
 name: KeyMe
-description: KeyMe is a company surfaced as a portfolio company of battery-ventures and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  KeyMe is a nationwide locksmith and key-duplication company that pairs mobile
+  locksmith technicians with a network of self-service key-copying kiosks located
+  inside thousands of retail stores across the United States. Customers can copy
+  residential, commercial, and automotive keys, RFID fobs and access cards at a
+  kiosk, order duplicates online, or request 24/7 mobile locksmith help for home,
+  auto, and business lockouts, transponder and ignition key programming, lock
+  installation, re-keying, and access-control and master-key systems. KeyMe is
+  backed by Battery Ventures. As of this profile the company operates as a
+  consumer-facing locksmith and kiosk service and publishes no public developer
+  API, SDK, or documentation surface; this record captures its public web
+  identity for the API Evangelist network.
 url: https://raw.githubusercontent.com/api-evangelist/keyme/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +33,39 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Locksmith
+- Key Duplication
+- Kiosks
+- Security
+- Access Control
+- Retail
+- Consumer Services
 apis: []
+common:
+- type: DomainSecurity
+  url: security/keyme-domain-security.yml
+- type: Website
+  url: https://key.me/
+- type: About
+  url: https://key.me/about-us
+- type: Blog
+  url: https://key.me/article
+- type: Support
+  url: https://keyme.zendesk.com/hc/en-us
+- type: TermsOfService
+  url: https://key.me/terms
+- type: PrivacyPolicy
+  url: https://key.me/privacy
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
